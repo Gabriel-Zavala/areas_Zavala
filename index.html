@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const resultado=prompt("1.- circulo 2.-cuadrado 3.-rectangulo 4.-triangulo")
+        switch (resultado) {
+            case "1":
+                const readio=prompt("ingrese el radio")
+                let resultado=readio*readio*3.16;
+                console.log(resultado)
+                break;
+             case "2":
+                const ladoA=prompt("ingrese lado")
+                let resultado_cuadrado=ladoA*ladoA;
+                console.log(resultado_cuadrado)
+                break;
+             case "3":
+                const largo=prompt("ingrese el largo del rectangulo")
+                const ancho=prompt("ingrese el ancho")
+                let rectangulo=ancho*largo;
+                console.log(rectangulo)
+                break;
+             case "4":
+                const base=prompt("ingrese la base")
+                const alturaT=prompt("ingrese la altura")
+                let triangulo=alturaT*base/2;
+                console.log(triangulo)
+                break;
+        
+            default:
+                break;
+        }
+    </script>
+</body>
+</html>
